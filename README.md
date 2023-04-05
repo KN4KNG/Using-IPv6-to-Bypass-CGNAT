@@ -78,7 +78,7 @@ sudo ip link set TUNNEL_INTERFACE_NAME up
 
 To ensure that your computer is successfully using the IPv6 tunnel, visit an IPv6 test site such as [http://test-ipv6.com/](http://test-ipv6.com/). If the test shows that you have a valid IPv6 address, your tunnel is working correctly.
 
-## Automating CLIENT_IPV4 _ADDRESS Retrieval
+## Automating CLIENT_IPV4 _ADDRESS Retrieval (Linux Users)
 To create a systemd service that automatically updates the CLIENT_IPV4_ADDRESS and configures the IPv6 tunnel, follow these steps:
 
 1.  Create a new script file that contains the tunnel configuration commands:
@@ -168,7 +168,7 @@ sudo systemctl restart ipv6_tunnel.service
 
 To automate the restart process, you can create a script that periodically checks for IP address changes and restarts the service if needed. 
 
-## Automating CLIENT_IPV4 _ADDRESS Updating
+## Automating CLIENT_IPV4 _ADDRESS Updating (Linux Users)
 
 To create a script that periodically checks for IP address changes and restarts the ipv6_tunnel.service if needed, follow these steps:
 
